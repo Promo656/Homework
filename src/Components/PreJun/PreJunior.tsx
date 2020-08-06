@@ -1,13 +1,16 @@
 import React from "react";
-import s from "../App.module.css";
+import s from "./PreJunior.module.css";
 import {Paper} from "@material-ui/core";
+
+
 
 export function PreJunior() {
     return (
         <div>
-            <Paper>
+            <Paper elevation={6}>
                 <div className={s.messageBlock}>
-                    <img className={s.messageLogo} src="https://fanparty.ru/fanclubs/tom-kruz/gallery/1851014_tom_kruz.jpg"
+                    <img className={s.messageLogo}
+                         src="https://fanparty.ru/fanclubs/tom-kruz/gallery/1851014_tom_kruz.jpg"
                          alt=""/>
                     <div className={s.message}>
                         <div className={s.name}>Egor</div>
@@ -16,6 +19,10 @@ export function PreJunior() {
                         <div className={s.tail}></div>
                     </div>
                 </div>
+            </Paper>
+
+            <Paper elevation={6}>
+
             </Paper>
         </div>
     )
