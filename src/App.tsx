@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.module.css';
 import s from "./App.module.css"
 import {Header} from "./Components/Header/Header";
@@ -11,11 +11,11 @@ function App() {
 
     return (
         <div className={s.container}>
-            <Header/>
+                <Header/>
             <div className={s.itemContainer}>
-            <Route path={"/prejunior"} render={()=><PreJunior />}/>
-            <Route path={"/junior"} render={()=><Junior/>}/>
-            <Route path={"/apperjunior"} render={()=><ApperJunior/>}/>
+                <Route path={"/prejunior"} render={() => <PreJunior/>}/>
+                <Route path={"/junior"} render={() => <Junior/>}/>
+                <Route path={"/apperjunior"} render={() => <ApperJunior/>}/>
             </div>
         </div>
     )

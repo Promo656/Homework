@@ -15,7 +15,6 @@ export function PreJunior() {
             <Paper elevation={6}>
                 <Tasks title={"My daily tasks"}/>
             </Paper>
-
             <Paper elevation={6}>
                 <Input/>
             </Paper>
